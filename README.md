@@ -15,3 +15,30 @@
 ###### 안드로이드에서는 onActivityResult() 메소드를 통해 호출된 Activity에서 저장한 결과를 돌려줍니다. 
 ###### 이 때 requestCode는 처음 startActivityForResult()의 두번째 인수 값이며, resultCode는 호출된 Activity에서 설정한 성공(RESULT_OK)/실패(RESULT_CANCEL) 값입니다. 이를 통해 어떤 호출 (REQUST_TEST) 이었는지와 결과가 어떠한지 (RESULT_OK)를 알 수 있으므로 그에 맞는 동작을 진행할 수 있습니다. 마지막으로 세번째 인수 Intent는 호출된 Activity에서 저장한 결과입니다.
 
+# 인텐트(Intent)로 데이터 전달(putExtra, getExtras)
+
+###### Intent로 다른 Activity(예, AnotherActivity.class)를 실행시킬 때는 다음과 같이 한다.
+
+```
+val intent = new Intent(getApplicationContext(), AnotherActivity.class);
+startActivity(intent);
+```
+
+###### 그런데, 여기에 추가로 AnotherActivity 데이터를 전달하고 싶을 때가 있다. 
+###### 이때 사용할 수 있는 것이 putExtra() 다.
+
+```
+val intent = new Intent(getApplicationContext(), AnotherActivity.class);
+intent.putExtra("name", "rio");
+intent.putExtra("age", 10);
+startActivity(intent);
+```
+
+###### 그리고, AnotherActivity에서는 다음과 같이 getExtras()를 이용해서 데이터를 받을 수 있다.
+###### (바로 데이터를 받을 것이므로 보통은 onCreate() 메서드에 구현 한다.)
+
+```
+val intent = getIntent();
+val name = intent.getExtras().getString("name");
+val age = intent.getExtras().getInt("age");
+```
