@@ -1,0 +1,2 @@
+rootProject.name='SOPT_PJ_1_1'
+include ':app'
