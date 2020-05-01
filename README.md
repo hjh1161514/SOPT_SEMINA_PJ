@@ -14,3 +14,4 @@
 ### 3. onActivityResult()에서 결과 확인하기
 ###### 안드로이드에서는 onActivityResult() 메소드를 통해 호출된 Activity에서 저장한 결과를 돌려줍니다. 
 ###### 이 때 requestCode는 처음 startActivityForResult()의 두번째 인수 값이며, resultCode는 호출된 Activity에서 설정한 성공(RESULT_OK)/실패(RESULT_CANCEL) 값입니다. 이를 통해 어떤 호출 (REQUST_TEST) 이었는지와 결과가 어떠한지 (RESULT_OK)를 알 수 있으므로 그에 맞는 동작을 진행할 수 있습니다. 마지막으로 세번째 인수 Intent는 호출된 Activity에서 저장한 결과입니다.
+
