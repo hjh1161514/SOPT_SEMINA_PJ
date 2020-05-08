@@ -27,5 +27,6 @@ class IDecoration : RecyclerView.ItemDecoration() {
 ###### RecyclerView 상단과 하단에 패딩이 있는 경우 패딩 공간을 사용하지 못하고 스크롤이 되는데 해당 옵션(clipToPadding="false")을 사용하면 그러한 패딩공간까지 사용하여 더 많은 아이템을 사용자에게 노출할 수 있다.
 
 ####### (참고)clipToPadding의 기본 값은 true이다.
+(https://user-images.githubusercontent.com/61824695/81410941-8e718d00-917c-11ea-8d92-ad67ac60d91c.JPG)
 
 
