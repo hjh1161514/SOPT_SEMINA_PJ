@@ -35,7 +35,7 @@ startActivity(intent);
 ```
 
 ###### 그리고, AnotherActivity에서는 다음과 같이 getExtras()를 이용해서 데이터를 받을 수 있다.
-###### (바로 데이터를 받을 것이므로 보통은 onCreate() 메서드에 구현 한다.)
+###### (바로 데이터를 받을 것이므로 보통은 onCreate() 메서드에 구현한다.)
 
 ```
 val intent = getIntent();
