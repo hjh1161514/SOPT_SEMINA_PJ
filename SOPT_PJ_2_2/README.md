@@ -4,13 +4,13 @@
 
 ###### MainActivity.java에서 ItemDecoration을 추가해준다.
 
-'''
+```
 recyclerview.addItemDecoration(IDecoration())
-'''
+```
 
 ##### MyDecoration 클래스에서는 getItemOffsets을 재정의해 RecyclerView 안에 있는 아이템에 여백을 설정해 줄 수 있따.
 
-'''
+```
 class IDecoration : RecyclerView.ItemDecoration() {
     override fun getItemOffsets( outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State
     ) {
@@ -18,7 +18,7 @@ class IDecoration : RecyclerView.ItemDecoration() {
         outRect.set(20,20,20,20)
     }
 }
-'''
+```
 
 # clipToPadding
 
