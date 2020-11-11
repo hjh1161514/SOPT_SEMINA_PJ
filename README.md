@@ -11,7 +11,7 @@
 <br>
 
 ## 각 과제별 기능
-* 1주차 :
+* 1주차 : startActivityForResult(), putExtra, getExtras
 * 2주차 : RecyclerView, itemDecoration, clipToPadding
 * 3주차 :
 
