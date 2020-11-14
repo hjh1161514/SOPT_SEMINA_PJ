@@ -10,7 +10,7 @@
 * AndroidStudio, Kotlin
 <br>
 
-## 각 과제별 기능
+## 각 과제별 내용
 * 1주차 : startActivityForResult(), putExtra, getExtras
 * 2주차 : RecyclerView, itemDecoration, clipToPadding
 * 3주차 :
